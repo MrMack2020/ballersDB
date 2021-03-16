@@ -21,7 +21,15 @@ def create_table():
 jwt = JWTManager(app)
 
 
-app.add_resource (UserRegister, '/register')
+app.add_resource(UserRegister, '/register')
+app.add_resource(UserLogin, '/login')
+app.add_resource(User, '/user/<string:name>')
+app.add_resource(UserLogout, '/logout')
+app.add_resource(Player, '/player/<string:name>')
+app.add_resource(PlayerList, '/players')
+app.add_resource(TeamList, '/find/<string:name>')
+app.add_resource(NationList, '/find/<string:name>')
+
 
 
 if __name__ == "__main__":
