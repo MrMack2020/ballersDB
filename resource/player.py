@@ -1,13 +1,13 @@
 from flask_restful import Resource
 
 
-class Player(Resource): # add player
+class PlayerNames(Resource): # add player
     @classmethod
     def post(cls):
         pass
 
     @classmethod # get player by name
-    def get_player(cls):
+    def get(cls):
         pass
 
     @classmethod  # add or amend player
@@ -25,16 +25,6 @@ class PlayerList(Resource): # list all players
         pass
 
 
-class TeamList(Resource):
-    @classmethod # list all players by team
-    def get_players_by_team(cls):
-        pass
-
-
-class NationList(Resource):
-    @classmethod # list all players by their nationality
-    def get_players_by_nation(cls):
-        pass
 
 
 
