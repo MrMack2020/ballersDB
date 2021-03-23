@@ -1,4 +1,5 @@
 from flask_restful import Resource
+from flask import request
 from flask_jwt_extended import (
     jwt_required,
     get_jwt,
@@ -23,7 +24,6 @@ class User(Resource):
     @classmethod # find user
     @jwt_required
     def get(cls):
-        pass
 
     @classmethod # delete user
     @jwt_required
